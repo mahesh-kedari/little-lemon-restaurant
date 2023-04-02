@@ -4,7 +4,12 @@
  */
 import { useState } from "react";
 import { Link } from "react-router-dom";
-export default function ReservationForm(props:any) {
+
+type Props =  {
+  availableTimes: any,
+  updateTimes: Function,
+}
+export default function ReservationForm(props:Props) {
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
   const [email, setEmail] = useState("");

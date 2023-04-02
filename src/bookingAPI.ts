@@ -11,7 +11,7 @@ const seededRandom = function (seed: any) {
   };
 };
 
-export function fetchAPI(date: any) {
+export function fetchAPI(date: any) :Array<any> {
   let result = [];
   let dt = new Date(date);
   let seed = dt.getDate();
